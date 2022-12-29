@@ -4,7 +4,6 @@ function twoNumberSum(array, targetSum) {
   let sum_obj = {}
   let sumPair = [];
   for (let i = 0; i < array.length; i++){
-    console.log({ i })
     const diff = targetSum - array[i]
     if(diff in sum_obj){
       return [array[i], diff]
